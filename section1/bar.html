@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+
+    <h1>Student Admission Form</h1>
+
+    <form>
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" required minlength="3" maxlength="20">
+        <br><br>
+        
+        <label for="emailaddress">Email Address</label>
+        <input type="email" id="emailaddress" required>
+        <br><br>
+        <label for="dob">Date Of Birth</label>
+        <input type="date">
+        <br><br>
+        <label for="">Address</label>
+        <textarea rows="5" cols="20"></textarea>
+        <br><br>
+
+        <label for="Gender"></label>
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+
+        <br><br>
+        <label for="">Select Course</label>
+        <select>
+            <option>MERN stack</option>
+            <option>Data analist</option>
+            <option>Cyber Security</option>
+            <option>Data Scintist</option>
+            <option>Flutter</option>
+        </select>
+               <br><br>
+
+
+               <label for="">College name</label>
+               <input type="text" list="college">
+               <datalist id = "college">
+                <option >BBD</option>
+                <option >DSMNRU</option>
+                <option >SMS</option>
+                <option >SSG</option>
+             </datalist>
+
+
+             <br><br>
+
+
+             <input type="checkbox">
+             <label for="terms">I accept terms and condition </label>
+
+
+
+        <br><br>
+
+
+        <details>
+            <summary>View Term And Condition</summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolores dolor, quis soluta aliquam? Eveniet voluptas deleniti laborum laudantium ab, optio aliquid voluptatem sint eos accusantium neque corporis in.</p>
+        </details>
+        <br><br>
+
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

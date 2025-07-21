@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 2px solid red;
+            width: 20%;
+            padding: 50px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.822);
+            background-color: white;
+
+        }
+
+        body{
+            background-image: url(https://cdn.mos.cms.futurecdn.net/v2/t:0,l:0,cw:1920,ch:1080,q:80,w:1920/9q3NwsxQjMJAgvspsqgffY.jpg);
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        *{
+            font-family: Roboto;
+        }
+        .text-iput{
+
+
+            display: block;
+            width: 100px;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid whitesmoke;
+        }
+
+        .submit-btn{
+            display: block;
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+
+        }
+        .link{
+            display: block;
+            color: blueviolet;
+            text-decoration: none;
+        }
+        .forgot-link{
+            text-align: right;
+            margin-bottom: 20px;
+
+        }
+         
+        .register-link{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="card">
+
+        <h1 class="form-title">Login form</h1>
+
+        <form >
+            <label> Email Address </label>
+            <input type="email" class="text-input">
+             
+            <label>Passward</label>
+            <input type="passward" class="text-input">
+
+            <a href="#" class="link  forgot-link">Forgot Password</a>
+
+            
+            <button class=" submit-btn">Submit </button>
+
+            <a href="#"  class="link register-link "> Not Registered Yet ? Signup Here</a>
+        </form>
+        
+    </div>
+</body>
+</html>
