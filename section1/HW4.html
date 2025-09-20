@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Side-by-Side Forms</title>
+<style>
+.form-container {
+  display: flex; 
+  width: 100%; 
+  justify-content: space-around; 
+
+}
+
+.form-item {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  
+}
+
+
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; 
+}
+
+.form-item button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-item button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <div class="form-item">
+    <form>
+      <label for="name1">Study with us</label>
+
+      <br></br>
+    
+      
+      <h1 class="mx-20px my-20px">90%</h1>
+      <p>Graduates who are working in the <br> entartainment industry</p>
+      
+      <label for="enroll">Enrollement</label>
+       <label class=" text-pink-700 text-sm font-medium mb-2" for="underline">
+                                <ul>
+                                    <li>S U M M E R  2001</li> 
+                                    <li>A U T U M N 2021</li>
+                                    <li>W I N T E R 2021</li>
+                                </ul>
+                            </label>
+      
+    </form>
+  </div>
+
+  <div class="form-item">
+    <form>
+      <label for="name2">Name:</label>
+      <input type="text" id="name2" name="name2">
+      <label for="email2">Email:</label>
+      <input type="email" id="email2" name="email2">
+      <label for="message2">Message:</label>
+      <textarea id="message2" name="message2"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="form-item">
+    <form>
+      <label for="name3">Name:</label>
+      <input type="text" id="name3" name="name3">
+      <label for="email3">Email:</label>
+      <input type="email" id="email3" name="email3">
+      <label for="message3">Message:</label>
+      <textarea id="message3" name="message3"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

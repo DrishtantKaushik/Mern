@@ -1,71 +1,171 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Three Forms Side-by-Side</title>
-<style>
-
-
-
-.form-container > div {
-  width: 30%; /* Adjust width as needed */
-  border: 1px solid #ccc;
-  padding: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-</style>
-</head>
-<body>
+.header {
+  background: #fff;
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+}
 
-<div class="  my-3b-10px p-3">
-  <div>
-    <h2>Free</h2>
-     <h1 >$0</h1>
-    <form>
-      <label for="">500 request</label><br>
-      <br><br>
-      <label for="">Unlimited projection</label><br>
-      <br><br>
-      <label for="">extended free trial</label>
-      <br><br>
-      <button class="creat-act d-flex">Creat Account</button>
-    </form>
-  </div>
+.logo {
+  float: left;
+  font-weight: 600;
+  font-size: 24px;
+}
 
-  <div class="   my-30px b-10px p-40px">
-    <h2>Standard</h2>
-    <h1>$99/month</h1>
-    <form>
-      <label for="name2">Name:</label><br>
-      <input type="text" id="name2" name="name2"><br><br>
-      <label for="">recharge amount</label>
-        <select>
-            <option>19$/Day/10GB</option>
-            <option>49$/3days/20GB</option>
-            <option>101$/6-Days/35GB</option>
-            <option>349$/30Days/105GB</option>
-            <option>999.9$/1 Year/Unlimited GB</option>
-        </select>
-               <br><br>
-      <label for="email2">Email:</label><br>
-      <input type="email" id="email2" name="email2"><br><br>
-      <button class="creat-act">Creat Account</button>
-    </form>
-  </div>
+.nav {
+  float: right;
+}
 
-  <div class=" form-container my-3 border-10px p-3">
-    <h2>Enterprise</h2>
-    <h1>Let's Talk!</h1>
-    <form>
-      <label for="name3">Name:</label><br>
-      <input type="text" id="name3" name="name3"><br><br>
-      <label for="email3">Email:</label><br>
-      <input type="email" id="email3" name="email3"><br><br>
-      <button class="creat-act">Creat Account</button>
-    </form>
-  </div>
-</div>
+.nav a,
+.nav button {
+  margin-left: 1em;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-</body>
-</html>
+.btn {
+  padding: 0.5em 1.2em;
+  border-radius: 20px;
+}
+
+.primary {
+  background: linear-gradient(135deg, #d06cff, #ff70b8);
+  color: #fff;
+  border: none;
+}
+
+.hero {
+  background: linear-gradient(to bottom right, #fdf0ff, #e7d1ff);
+  padding: 4em 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-content img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.search {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.search input {
+  padding: 0.5em;
+  width: 60%;
+  margin-right: 1em;
+}
+
+.benefits ul {
+  list-style: none;
+  margin-top: 1em;
+}
+
+.courses .course-grid {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: #f8f4ff;
+  padding: 1em;
+  border-radius: 12px;
+  flex: 1 1 30%;
+}
+
+.instructor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4em;
+  flex-wrap: wrap;
+}
+
+.instructor-content {
+  flex: 1 1 60%;
+}
+
+.testimonials .testimonial-grid {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: #fff0ff;
+  padding: 1em;
+  border-radius: 10px;
+  flex: 1 1 30%;
+}
+
+.newsletter {
+  background: linear-gradient(135deg, #d06cff, #ff70b8);
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 0.5em;
+  width: 40%;
+  margin-right: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content,
+  .courses .course-grid,
+  .instructor,
+  .testimonials .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search input {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  .newsletter input {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+}

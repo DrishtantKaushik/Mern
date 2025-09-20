@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Comparison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .form-container {
+            transition: all 0.3s ease;
+        }
+        
+        .standard-bg {
+            background: linear-gradient(135deg, #6b21a8 0%, #111111 100%);
+        }
+        .google-btn {
+            background: white;
+            color: #737373;
+            border: 1px solid #e5e7eb;
+        }
+        
+        
+        
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">Choose your plan</h1>
+        <p class="text-center text-gray-600 mb-12">Be the first to knowwhen boardme launches.Early access users will receive <br> an extended free trial and early bird pricing option.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="form-container bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center ">Free</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label class="text-xl font-semibold text-pink-800 mb-6 text-center mx-auto" for="number">$0</label>
+                            
+                        </div>
+                        <div class="mb-6">
+                            <label class=" text-pink-700 text-sm font-medium mb-2" for="underline">
+                                <ul>
+                                    <li>500 request</li> 
+                                    <li>Unlimited Projects</li>
+                                    <li>Extended free triyal</li>
+                                </ul>
+                            </label>
+                            
+                        </div>
+                        <button class="w-30px bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition" type="Account">Creat Account</button>
+                    </form>
+                    
+                </div>
+               
+            </div>
+
+
+            
+            <div class="form-container linear-bg text-black rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <div class="flex justify-center mb -4">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Standard</h2>
+                    </div>
+                    <form>
+                        <div class="mb-4">
+                            <label class="text-xl font-semibold text-pink-800 mb-6 text-center" for="email-minimal">$99/month</label>
+                           
+                        </div>
+                        <div>
+                            <label class="text-sm font-semi text-pink-800 mb-6 text-center">Recharge amount</label>
+                                <select>
+                                  <option>$49/5 Days/25GB</option>
+                                  <option>$359.9/30 Days/110 GB</option>
+                                  
+                                </select>
+                               
+                        </div>
+                         <div class="mb-6">
+                            <label class=" text-green-700 text-sm font-medium mb-2" for="underline">
+                                <ul>
+                                    <li>2500 request</li> 
+                                    <li>Unlimited Projects</li>
+                                    <li>Extended free triyal</li>
+                                </ul>
+                            </label>
+                            
+                        </div>
+                        
+                        <button class="w-30px bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition" type="Account">Creat Account</button>
+                    </form>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="form-container bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Enterprises</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label class="text-xl font-semibold text-green-800 mb-6 text-center" for="email-social">" Let's Talk "</label>
+                            
+                        </div>
+                        <div class="mb-6">
+                            <label class=" text-pink-700 text-sm font-medium mb-2" for="underline">
+                                <ul>
+                                    <li>2500 request</li> 
+                                    <li>Unlimited Projects</li>
+                                    <li>Extended free triyal</li>
+                                </ul>
+                            </label>
+                            
+                        </div>
+                        <button class="w-30px bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition" type="Account">Creat Account</button>
+                    </form>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
